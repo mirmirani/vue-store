@@ -1,7 +1,19 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div>
+    <nav>
+      <div class="container">
+        <ul class="nav__left">
+
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/admin">Admin</router-link></li>
+          <li><router-link to="/cart">Cart</router-link></li>
+
+
+        </ul>
+      </div>
+    </nav>
+
+    <router-view></router-view>
   </div>
 </template>
 
@@ -19,5 +31,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+nav{
+  background-color: slategrey;
+}
+
+nav li {
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
 }
 </style>
