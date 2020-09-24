@@ -41,6 +41,5 @@ nav li {
   list-style: none;
   text-decoration: none;
   text-transform: none;
-  
 }
 </style>
